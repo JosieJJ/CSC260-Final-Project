@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Notebook__Final_
 {
-    public partial class Form1 : Form
+    public partial class Notebook : Form
     {
-        public Form1()
+        public Notebook()
         {
             InitializeComponent();
         }
@@ -20,6 +20,16 @@ namespace Notebook__Final_
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void exutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Contact for assistance at my email.", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
