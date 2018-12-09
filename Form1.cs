@@ -20,10 +20,6 @@ namespace Notebook__Final_
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void exutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -32,7 +28,7 @@ namespace Notebook__Final_
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("For assistance, contact me at my email.", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("For assistance, contact me at my email. \r\n Notebook 2018.", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void MainRichTextBox_TextChanged(object sender, EventArgs e)
