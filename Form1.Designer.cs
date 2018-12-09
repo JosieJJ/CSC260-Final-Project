@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notebook));
             this.MainRichTextBox = new System.Windows.Forms.RichTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,16 +62,17 @@
             // 
             this.MainRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainRichTextBox.Location = new System.Drawing.Point(0, 24);
+            this.MainRichTextBox.Location = new System.Drawing.Point(0, 29);
+            this.MainRichTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.MainRichTextBox.Name = "MainRichTextBox";
-            this.MainRichTextBox.Size = new System.Drawing.Size(800, 426);
+            this.MainRichTextBox.Size = new System.Drawing.Size(812, 398);
             this.MainRichTextBox.TabIndex = 0;
             this.MainRichTextBox.Text = "";
             this.MainRichTextBox.TextChanged += new System.EventHandler(this.MainRichTextBox_TextChanged);
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip1.BackColor = System.Drawing.Color.Lavender;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
@@ -78,7 +80,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 5, 0, 5);
+            this.menuStrip1.Size = new System.Drawing.Size(812, 29);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,7 +93,7 @@
             this.toolStripMenuItem2,
             this.exutToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 19);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
@@ -98,7 +101,7 @@
             this.newToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -106,25 +109,25 @@
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // exutToolStripMenuItem
             // 
             this.exutToolStripMenuItem.Name = "exutToolStripMenuItem";
-            this.exutToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exutToolStripMenuItem.Text = "Exit";
             this.exutToolStripMenuItem.Click += new System.EventHandler(this.exutToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
-            this.editToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.editToolStripMenuItem.BackColor = System.Drawing.Color.Lavender;
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.undoToolStripMenuItem,
             this.redoToolStripMenuItem,
@@ -137,7 +140,7 @@
             this.selectAllToolStripMenuItem,
             this.dateTimeToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 19);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
@@ -228,27 +231,27 @@
             this.underlineToolStripMenuItem,
             this.strikeThroughToolStripMenuItem});
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(43, 19);
             this.fontToolStripMenuItem.Text = "Font";
             // 
             // normalToolStripMenuItem
             // 
             this.normalToolStripMenuItem.Enabled = false;
             this.normalToolStripMenuItem.Name = "normalToolStripMenuItem";
-            this.normalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.normalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.normalToolStripMenuItem.Text = "Normal";
             this.normalToolStripMenuItem.Click += new System.EventHandler(this.normalToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // boldToolStripMenuItem
             // 
             this.boldToolStripMenuItem.Enabled = false;
             this.boldToolStripMenuItem.Name = "boldToolStripMenuItem";
-            this.boldToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.boldToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.boldToolStripMenuItem.Text = "Bold";
             this.boldToolStripMenuItem.Click += new System.EventHandler(this.boldToolStripMenuItem_Click);
             // 
@@ -256,7 +259,7 @@
             // 
             this.italicToolStripMenuItem.Enabled = false;
             this.italicToolStripMenuItem.Name = "italicToolStripMenuItem";
-            this.italicToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.italicToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.italicToolStripMenuItem.Text = "Italic";
             this.italicToolStripMenuItem.Click += new System.EventHandler(this.italicToolStripMenuItem_Click);
             // 
@@ -264,7 +267,7 @@
             // 
             this.underlineToolStripMenuItem.Enabled = false;
             this.underlineToolStripMenuItem.Name = "underlineToolStripMenuItem";
-            this.underlineToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.underlineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.underlineToolStripMenuItem.Text = "Underline";
             this.underlineToolStripMenuItem.Click += new System.EventHandler(this.underlineToolStripMenuItem_Click);
             // 
@@ -272,26 +275,29 @@
             // 
             this.strikeThroughToolStripMenuItem.Enabled = false;
             this.strikeThroughToolStripMenuItem.Name = "strikeThroughToolStripMenuItem";
-            this.strikeThroughToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.strikeThroughToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.strikeThroughToolStripMenuItem.Text = "Strike Through";
             this.strikeThroughToolStripMenuItem.Click += new System.EventHandler(this.strikeThroughToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 19);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // Notebook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(812, 427);
             this.Controls.Add(this.MainRichTextBox);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.Name = "Notebook";
             this.Text = "Notebook";
             this.menuStrip1.ResumeLayout(false);
